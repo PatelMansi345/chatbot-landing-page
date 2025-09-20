@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ultimate Chatbot Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      animation: fadeIn 1s ease-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .cta-button {
+      background-color: #00C9A7;
+      color: #0f2027;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .cta-button:hover {
+      background-color: #00B49C;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 201, 167, 0.4);
+    }
+
+    #chatbot-section {
+      margin-top: 4rem;
+      width: 100%;
+      max-width: 600px;
+      min-height: 400px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px dashed #00C9A7;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    footer {
+      margin-top: auto;
+      padding-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚀 Ultimate Chatbot Demo</h1>
+  <p>Experience a next-gen AI chatbot integrated with calendar, voice, and even a 3D assistant. This is your first step into the future of human-AI interaction.</p>
+  <button class="cta-button" onclick="document.getElementById('chatbot-section').scrollIntoView({ behavior: 'smooth' })">Launch Chatbot</button>
+
+  <div id="chatbot-section">
+    Chatbot will appear here...
+  </div>
+
+  <footer>
+    © 2025 Ultimate Chatbot. All rights reserved.
+  </footer>
+
+</body>
+</html>
